@@ -1,0 +1,19 @@
+.viewHolder {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .header{
+    font-size: 18px;
+    padding-top: 1rem;
+    color: #999;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .view {
+    flex: 1;
+  }
+}
