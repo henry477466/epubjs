@@ -15,7 +15,8 @@ class App extends React.Component {
   componentDidMount() {
     this.setState({
       // localFile: 'http://www.tuibook.com/szyun/books/caitianxu/1.epub',
-      localFile: '/epub/看见，不一样的故宫.epub',
+      // localFile: '/epub/看见，不一样的故宫.epub',
+      localFile: '/epub/1.epub',
       localName: '图书名字',
     });
   }
@@ -33,7 +34,7 @@ class App extends React.Component {
         <div className='book-root'>
           <div className='book-border'>
             {localFile ? <EpubView localFile={localFile} epubLoadEd={this.epubLoadEd}/> : null}
-            <button className='FontSizeButton'>文字大小</button>
+            {/* <button className='FontSizeButton'>文字大小</button> */}
           </div>
         </div>
         <div className={`file-loading ${loaded ? 'hide' : ''}`}>

@@ -12,8 +12,8 @@ export default class index extends Component {
           name: 'default',
           style: {
             body: {
-              color: '#fff',
-              background: '#ddd',
+              color: '#000',
+              background: '#fff',
             },
           },
         },
@@ -30,26 +30,59 @@ export default class index extends Component {
   //加载epub
   initReader = () => {
     const { localFile, epubLoadEd } = this.props;
-    this.book = new Epub(localFile);
-    this.book.loaded.navigation.then(({ toc }) => {
-      this.setState({ toc });
-      //回调上一级
-      epubLoadEd && epubLoadEd(toc);
-      //开始渲染
-      this.rendition = this.book.renderTo(this.viewerRef, {
-        contained: true,
-        width: '100%',
-        height: '100%',
+    // this.book = new Epub(localFile, { openAs: 'epub' });
+    this.book = new Epub();
+    this.book
+      .open(localFile)
+      .then(() => {
+        this.rendition = this.book.renderTo(this.viewerRef, {
+          width: '100%',
+          height: '100%',
+          flow: 'paginated',
+          manager: 'continuous',
+          snap: true,
+        });
+        this.book.ready.then(({ toc }) => {
+          this.setState({ toc });
+          epubLoadEd(toc);
+          //回调上一级
+          this.rendition.display();
+        });
+      })
+      .catch((err) => {
+        alert(err.message);
       });
-      this.themes = this.rendition.themes;
-      this.state.themeList.forEach((theme) => {
-        this.themes.register(theme.name, theme.style);
-      });
-      this.themes.select('default')
-      
-      //直接加载第一章
-      this.rendition.display(toc[1].href);
-    });
+
+    // this.book.loaded.spine.then(res => {
+    //   console.log('xx1',res)
+    // })
+    // this.book.loaded.spine.then(res => {
+    //   console.log('xx1',res)
+    // })
+    // this.book.loaded.spine.then(res => {
+    //   console.log('xx1',res)
+    // })
+    // this.book.loaded.navigation.then(({ toc }) => {
+    //   this.setState({ toc });
+    //   //回调上一级
+    //   epubLoadEd && epubLoadEd(toc);
+    //   //开始渲染
+    //   this.rendition = this.book.renderTo(this.viewerRef, {
+    //     // contained: true,
+    //     width: '100%',
+    //     height: '100%',
+    //     flow: 'paginated',
+    //     manager: 'continuous',
+    //     snap: true,
+    //   });
+    //   //   this.themes = this.rendition.themes;
+    //   //   this.state.themeList.forEach((theme) => {
+    //   //     this.themes.register(theme.name, theme.style);
+    //   //   });
+    //   //   this.themes.select('default')
+    //   //   //直接加载第一章
+    //   //   this.rendition.display(toc[1].href);
+    // });
   };
   //上一页
   prevPage = () => {
@@ -66,12 +99,11 @@ export default class index extends Component {
   render() {
     return (
       <div className='viewHolder'>
-        <div className='header'>name</div>
         <div className='view' ref={(el) => (this.viewerRef = el)}></div>
-        <div className='footer'>
+        {/* <div className='footer'>
           <button onClick={this.prevPage}>prev</button>
           <button onClick={this.nextPage}>next</button>
-        </div>
+        </div> */}
       </div>
     );
   }
