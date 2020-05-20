@@ -15,8 +15,7 @@ class App extends React.Component {
   componentDidMount() {
     this.setState({
       // localFile: 'http://www.tuibook.com/szyun/books/caitianxu/1.epub',
-      // localFile: '/epub/看见，不一样的故宫.epub',
-      localFile: '/epub/1.epub',
+      localFile: `file:///data/user/0/com.cjread/files/epub/1.epub`,
       localName: '图书名字',
     });
   }
