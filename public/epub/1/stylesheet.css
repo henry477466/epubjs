@@ -1,0 +1,301 @@
+.bodycontent {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 0.5em 0
+    }
+.bodycontent-1-c {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em 0
+    }
+.bodycontent-1-fangsong {
+    display: block;
+    font-family: "fangsong";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 0.5em 0
+    }
+.bodycontent-1-top {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 1.3em 0 0.5em
+    }
+.bodycontent-2-fangsong {
+    display: block;
+    font-family: "fangsong";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 0.5em 0 0.5em 2em
+    }
+.bodycontent-2-fangsong-top {
+    display: block;
+    font-family: "fangsong";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 1.3em 0 0.5em 2em
+    }
+.bodycontent-3-top {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    margin: 1.3em 0 0.5em 8em
+    }
+.bodycontent1 {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 8em
+    }
+.calibre {
+    background-color: transparent;
+    display: block;
+    font-family: songti;
+    font-size: 1em;
+    line-height: 1.2;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    text-decoration: none
+    }
+.calibre2 {
+    display: block;
+    line-height: 1.2
+    }
+.calibre3 {
+    display: block
+    }
+.calibre4 {
+    font-weight: bold
+    }
+.calibre5 {
+    font-size: 0.75em;
+    line-height: 1.2;
+    vertical-align: super;
+    margin: 0
+    }
+.calibre6 {
+    color: gray;
+    display: block;
+    height: 2px;
+    margin: 0.5em auto;
+    border: currentColor inset 1px
+    }
+.calibre7 {
+    font-style: italic
+    }
+.chatu_img {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1em 0;
+    padding: 0
+    }
+.contents {
+    display: block;
+    font-family: "heiti";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: 0;
+    margin: 0.2em 0
+    }
+.fncontent {
+    display: block;
+    font-family: "fangsong";
+    font-size: 0.875em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: -2em;
+    margin: 0.5em 0 0.5em 2em
+    }
+.fncontent-1-top {
+    display: block;
+    font-family: "fangsong";
+    font-size: 0.875em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: -2em;
+    margin: 1.3em 0 0.5em 2em
+    }
+.fncontent1 {
+    display: block;
+    font-family: "fangsong";
+    font-size: 0.875em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 2em
+    }
+.kaiti {
+    font-family: "kaiti"
+    }
+.noindent-bodycontent {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 4em
+    }
+.noindent-bodycontent-1-fangsong-c {
+    display: block;
+    font-family: "fangsong";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em 0
+    }
+.parttitle {
+    display: block;
+    font-family: "heiti";
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: 0;
+    margin: 2em 0 1em
+    }
+.pic-img-w {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w1 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 95%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w2 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 45%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w3 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 40%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w4 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w5 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 70%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w6 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    margin: 0;
+    padding: 0
+    }
+.pic-img-w7 {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 90%;
+    margin: 0;
+    padding: 0
+    }
+.prefacetitle-c {
+    display: block;
+    font-family: "heiti";
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 1.6em 0 0
+    }
+.prefacetitle-c1 {
+    display: block;
+    font-family: "heiti";
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 1.6em 0 0;
+    border: currentColor none medium
+    }
+.signcontent-1-kaiti {
+    display: block;
+    font-family: "kaiti";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: right;
+    text-indent: 0;
+    margin: 0
+    }
+.signcontent-1-kaiti-top {
+    display: block;
+    font-family: "kaiti";
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: right;
+    text-indent: 0;
+    margin: 1.3em 0 0
+    }
+.tuti {
+    display: block;
+    font-family: "kaiti";
+    font-size: 0.875em;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em 0
+    }
+.txtheading-1-c {
+    display: block;
+    font-family: "heiti";
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 1.2em 0
+    }

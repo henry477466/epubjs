@@ -30,7 +30,6 @@ export default class index extends Component {
   //加载epub
   initReader = () => {
     const { localFile, epubLoadEd } = this.props;
-    // this.book = new Epub(localFile, { openAs: 'epub' });
     this.book = new Epub();
     this.book
       .open(localFile)
@@ -50,7 +49,7 @@ export default class index extends Component {
         });
       })
       .catch((err) => {
-        alert(err.message);
+        alert('文件读取失败');
       });
 
     // this.book.loaded.spine.then(res => {
